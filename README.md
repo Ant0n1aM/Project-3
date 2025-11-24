@@ -1,5 +1,4 @@
-# Project-3
-1. System of Equations – Finding the Equation of a Parabola
+# Project-3.1 System of Equations – Finding the Equation of a Parabola
 Create a script that will:
 • Ask the user for three sets of (x,y) coordinates that a parabola passes through.
 • Solve a system of equations to determine the coefficients a, b, and c for the equation for the parabola
