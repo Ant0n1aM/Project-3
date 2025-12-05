@@ -23,3 +23,28 @@ x = zeros(size(v));
 for i = 2:length(t)
     x(i) = x(i-1) + 0.5*(v(i) + v(i-1))*dt;
 end
+
+% Create three separate plots: acceleration, velocity, and position
+% Acceleration plot 
+subplot(3,1,1)
+plot(t,a)
+grid on;
+xlabel('Time (s)');
+ylabel('Acceleration (m/s^2)');
+title('Acceleration vs. Time');
+
+% Velocity plot
+subplot(3,1,2)
+plot(t,v)
+grid on;
+xlabel('Time (s)');
+ylabel('Velocity(m/s)');
+title('Velocity vs. Time');
+
+% Position plot 
+subplot(3,1,3)
+plot(t,x)
+grid on;
+xlabel('Time (s)');
+ylabel('Position (m)');
+title('Positon vs. Time');
