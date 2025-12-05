@@ -18,4 +18,8 @@ end
 % Backward difference at last point
 a(end) = (v(end) - v(end-1))/dt;
 
-
+% Determine the position function
+x = zeros(size(v));
+for i = 2:length(t)
+    x(i) = x(i-1) + 0.5*(v(i) + v(i-1))*dt;
+end
