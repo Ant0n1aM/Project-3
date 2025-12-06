@@ -7,15 +7,15 @@ y = input('Enter y values as a vector [y1 y2 y3]: ');
 p = polyfit(x, y, 2);
 
 % Reporting the output
-fprintf("The solution to that system is " + ...
-    "a = %.f, b = %.f, c = %.f.",p(1),p(2),p(3));
+fprintf("The solution to that system is: " + ...
+    "a = %.f, \n\t\t\t\tb = %.f, \n\t\t\t\tc = %.f.",p(1),p(2),p(3));
 fprintf("\nSo, the equation for the parabola is, " + ...
     "y = %.fx^2 + %.fx + %.f\n",p(1),p(2),p(3));
 
 % Graphing the parabola and the three points
 xlim = -10:0.1:10;
-plot(xlim, polyval(p,xlim),'green')
+plot(xlim, polyval(p,xlim),'green', 'linewidth',2)
 hold on 
-plot(x,y,'ro','linewidth',2)
+plot(x,y,'ro','linewidth',2,'Color',"b")
 grid on 
 title("Graph of Polynomial")
