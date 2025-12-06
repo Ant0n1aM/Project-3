@@ -16,6 +16,6 @@ fprintf("\nSo, the equation for the parabola is, " + ...
 xlim = -10:0.1:10;
 plot(xlim, polyval(p,xlim),'green')
 hold on 
-plot(x,y,'ro','linewidth',2)
+plot(x,y,'ro','linewidth',2,'Color',"b")
 grid on 
 title("Graph of Polynomial")
