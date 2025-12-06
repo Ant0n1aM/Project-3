@@ -20,3 +20,12 @@ for i = 1:numPlayers
             players(i).name,players(i).team,players(i).average,players(i).onBasepercent)
     end
 end
+% Determine and display players who had an on-base percentage higher than
+% 0.350
+fprintf('\n\n\nThe players with an on-base percentage higher than 0.350 are:\n\n')
+for i = 1:numPlayers
+    if players(i).onBasepercent > 0.350
+        fprintf('%s:\nTeam: %s\nAverage:\t\t\t%.3f\nOn-Base Percentage:\t%.3f\n\n', ...
+            players(i).name,players(i).team,players(i).average,players(i).onBasepercent)
+    end
+end
