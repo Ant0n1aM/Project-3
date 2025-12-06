@@ -32,13 +32,14 @@ blue(blue1) = 0;
 logo(:,:,1) = red;
 logo(:,:,2) = green;
 logo(:,:,3) = blue;
-% % Modify the image so the red pixels are aqua
-% red2 = red > 240 & green < 205 & blue < 205;
-% red(red2) = 0;
-% green(red2) = 255;
-% blue(red2) = 255;
-% logo(:,:,1) = red;
-% logo(:,:,2) = green;
-% logo(:,:,3) = blue;
+% Modify the image so the red pixels are aqua
+red2 = red > 240 & green < 205 & blue < 205;
+red(red2) = 0;
+green(red2) = 255;
+blue(red2) = 255;
+logo(:,:,1) = red;
+logo(:,:,2) = green;
+logo(:,:,3) = blue;
+% Plot the new logo alongside the original logo
 subplot(2,2,2)
 imshow(logo)
