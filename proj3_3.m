@@ -45,5 +45,5 @@ subplot(2,2,2)
 imshow(logo)
 % Add a statement to ecourage user to zoom into new logo
 % to verify that colors are all correct
-fprintf(['To very that black pixels are lime green, white pixels are purple, ' ...
+fprintf(['To verify that black pixels are lime green, white pixels are purple, ' ...
     'blue pixels are yellow, and red pixels are aqua zoom into the new logo.\n'])
