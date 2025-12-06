@@ -24,14 +24,14 @@ blue(white) = 255;
 logo(:,:,1) = red;
 logo(:,:,2) = green;
 logo(:,:,3) = blue;
-% % Modify the image so the blue pixels are pink
-% blue1 = red < 200 & green > 50 & blue > 150;
-% red(blue1) = 255;
-% green(blue1) = 0;
-% blue(blue1) = 127;
-% logo(:,:,1) = red;
-% logo(:,:,2) = green;
-% logo(:,:,3) = blue;
+% Modify the image so the blue pixels are pink
+blue1 = red < 50 & green < 50 & blue > 100;
+red(blue1) = 255;
+green(blue1) = 0;
+blue(blue1) = 127;
+logo(:,:,1) = red;
+logo(:,:,2) = green;
+logo(:,:,3) = blue;
 % % Modify the image so the red pixels are aqua
 % red = red > 200 & green < 100 & blue < 100;
 % red(blue1) = 0;
