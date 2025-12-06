@@ -14,7 +14,7 @@ fprintf("\nSo, the equation for the parabola is, " + ...
 
 % Graphing the parabola and the three points
 xlim = -10:0.1:10;
-plot(xlim, polyval(p,xlim),'green')
+plot(xlim, polyval(p,xlim),'green', 'linewidth',2)
 hold on 
 plot(x,y,'ro','linewidth',2,'Color',"b")
 grid on 
